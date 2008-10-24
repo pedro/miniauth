@@ -21,7 +21,7 @@ class ActionController::Base
 
 	def miniauth
 		authenticate_or_request_with_http_basic do |username, password|
-			@@miniauth.include?(username) && @@miniauth[username] == password
+			@@miniauth.include?(username) && @@miniauth[username].to_s == password
 		end
 	end
 end
