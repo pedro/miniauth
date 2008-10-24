@@ -1,0 +1,14 @@
+= Miniauth
+
+Yet another mini authentication system for Rails apps. Uses http auth.
+
+== USAGE:
+
+Install the plugin and setup the users in config/miniauth.yml. There's
+nothing to do in your controllers, it will request auth for everything.
+
+== SAMPLE YML:
+john:
+  secret
+dave:
+  12345
